@@ -30,6 +30,8 @@
 
 
 from abc import ABC, abstractmethod
+from rich import print
+from rich.panel import Panel
 
 # As relações com as instituição devem ser: Aluno, Professor, Coordenador, Diretor, Administrativo ou Vestibulando;
 
@@ -70,6 +72,10 @@ class Administrativo(Fatec):
 class Vestibulando(Fatec):
     def apresentar(self, nome):
         print(f"O vestibulando {nome} tem relação com a Fatec.")
+        
+class SemRelacao(Fatec):
+    def apresentar(self, nome):
+        print(f"[red]Relação não encontrada, consulte a secretaria FATEC para mais informações.[/]")
 
 class Factory():
     def criar_relacao(self, relacao):
@@ -94,13 +100,15 @@ class Factory():
                 return Vestibulando()
             
             case _:
-                raise ValueError("Relação não encontrada")   
+                return SemRelacao()   
                  
 def menu():
-    return int(input("""
-1 -- Consultar Situação
-0 -- Sair
-"""))
+    opcoes = """
+[plum3]1[/] -- Consultar Situação
+[plum3]0[/] -- Sair
+"""
+    print(Panel(opcoes, title="[plum3 bold]Sistema FATEC[/]"))
+    return int(input("> "))
 
 if __name__ ==  '__main__':
     nome = ''
