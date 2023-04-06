@@ -7,6 +7,10 @@
 </strong>
 </div>
 
+<div align=center>
+    <img src="https://refactoring.guru/images/patterns/content/factory-method/factory-method-en.png" width=400>
+</div>
+
 ---
 ## 🧾 Descrição do Projeto
 Este programa é um sistema de consulta de relação de pessoas com a instituição FATEC. Ele utiliza o padrão de design Factory Method para criar objetos que correspondem a diferentes tipos de relações, como aluno, professor, coordenador, diretor, administrativo e vestibulando.
