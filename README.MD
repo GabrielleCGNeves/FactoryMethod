@@ -7,6 +7,9 @@
 </strong>
 </div>
 
+<br>
+<br>
+
 <div align=center>
     <img src="https://refactoring.guru/images/patterns/content/factory-method/factory-method-en.png" width=400>
 </div>
