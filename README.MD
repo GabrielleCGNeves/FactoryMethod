@@ -2,8 +2,8 @@
 
 <div align='center'>
 <strong>
-<p><a href='https://github.com/ericksantos12'>Erick Sousa Santos</a></p>
-<p><a href='https://github.com/GabrielleCGNeves'>Gabrielle Carvalho Gonçalves das Neves</a></p>
+<p><a href='https://github.com/ericksantos12'>Erick Santos</a></p>
+<p><a href='https://github.com/GabrielleCGNeves'>Gabrielle C G Neves</a></p>
 </strong>
 </div>
 
